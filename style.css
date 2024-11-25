@@ -1,0 +1,166 @@
+body {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 2000px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.8rem;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.container-text {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.image {
+  width: 100%;
+  margin: 0;
+}
+
+.image > img {
+  width: 100%;
+  padding-top: 0;
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 32px;
+  color: hsl(24, 5%, 18%);
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 30px;
+  color: hsl(14, 45%, 36%);
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  padding: 5px 0 5px 15px;
+  vertical-align: middle;
+}
+
+.time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem;
+  letter-spacing: 1px;
+}
+
+/* change the color of lists bullets and  nutrition numbers: */
+.time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients li::marker,
+.instructions li::marker,
+.nutrition .number {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+/*borders bottom of sections*/
+.ingredients,
+.instructions {
+  border-bottom: 1px solid lightgrey;
+}
+
+.time-info {
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*Nutrition*/
+
+table {
+  width: 100%;
+}
+
+tr,
+td {
+  border-bottom: 1px solid lightgrey;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+.fat {
+  border-bottom: none;
+}
+
+/*footer*/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+a:link {
+  color: rgb(153, 195, 255);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(124, 12, 159);
+}
+
+a:hover {
+  color: rgb(0, 119, 255);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(153, 195, 255);
+}
+
+/*width tablet*/
+
+@media (min-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 16rem;
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  .container {
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  .image > img {
+    border-radius: 1rem;
+  }
+
+  .container-text {
+    padding: 0;
+  }
+}
